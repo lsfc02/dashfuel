@@ -1,0 +1,24 @@
+# Ignora coisas que não precisam ir pro build
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+node_modules/
+# logs
+*.log
+# dados locais
+*.sqlite3
+# se tiver segredos fora do git
+.env.local
