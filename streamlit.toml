@@ -1,0 +1,6 @@
+[server]
+runOnSave = true
+headless = true
+
+[theme]
+base="dark"

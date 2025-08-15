@@ -1,0 +1,3 @@
+# test_token.py (na raiz)
+from src.auth import get_token
+print(get_token()[:40] + "...")

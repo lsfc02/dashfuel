@@ -1,0 +1,37 @@
+# Python / Build
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Ambiente virtual
+.venv/
+venv/
+env/
+.python-version
+
+# IDE / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs / cache
+*.log
+*.sqlite3
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Arquivos sensíveis (exceto .env)
+.env.*
+!.env
+*.key
+*.pem
