@@ -26,10 +26,10 @@ COPY README.md streamlit.toml /app/
 # COPY .streamlit /app/.streamlit
 
 # Exponha a porta padrão do Streamlit
-EXPOSE 8503
+EXPOSE 8501
 
 # Healthcheck simples
-HEALTHCHECK --interval=30s --timeout=5s --retries=5 CMD curl -f http://localhost:8503/_stcore/health || exit 1
+HEALTHCHECK --interval=30s --timeout=5s --retries=5 CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
 # Comando de execução
-CMD ["streamlit", "run", "app/Home.py", "--server.port=8503", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app/Home.py", "--server.port=8501", "--server.address=0.0.0.0"]

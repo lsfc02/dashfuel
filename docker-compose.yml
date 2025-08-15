@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "8503:8503"
+      - "8503:8501"
     environment:
       # Injete suas variáveis aqui (ou use 'env_file' se preferir)
       FULTec_BASE_URL: "http://api.fueltec.com.br:30565/integracao/v1/"
