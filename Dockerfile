@@ -23,5 +23,5 @@ EXPOSE 8501
 HEALTHCHECK --interval=30s --timeout=5s --retries=5 \
   CMD curl -f http://localhost:8501/_stcore/health || exit 1
 
-# >>> AQUI O ALVO CORRETO QUE EXISTE NO SEU REPO <<<
+
 CMD ["streamlit","run","app/pages/01_Visão_Geral.py","--server.port=8501","--server.address=0.0.0.0"]
